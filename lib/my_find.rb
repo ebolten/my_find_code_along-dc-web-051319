@@ -2,6 +2,7 @@ require 'pry'
 
 def my_find(collection)
   i = 0
+  val = false
   vals = []
   while i < collection.length
     i += 1
@@ -10,8 +11,8 @@ def my_find(collection)
 
   vals.each do |item|
     if item == true
-      return true
+      val = true
     end
   end
-
+  return val
 end
