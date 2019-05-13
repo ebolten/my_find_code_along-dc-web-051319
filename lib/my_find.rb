@@ -11,7 +11,7 @@ def my_find(collection)
 
   vals.each do |item|
     if item == true
-      val = true
+      val = item
     end
   end
   return val
