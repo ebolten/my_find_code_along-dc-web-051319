@@ -9,10 +9,5 @@ def my_find(collection)
     yield(collection[i])
   end
 
-  vals.each do |item|
-    if item == true
-      val = item
-    end
-  end
-  return val
+
 end
