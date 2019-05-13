@@ -10,6 +10,4 @@ def my_find(collection)
       return yield(collection[i])
     end
   end
-
-
 end
