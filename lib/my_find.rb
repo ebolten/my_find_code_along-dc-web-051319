@@ -6,7 +6,7 @@ def my_find(collection)
   vals = []
   while i < collection.length
     i += 1
-    vals << yield(collection[i])
+    yield(collection[i])
   end
 
   vals.each do |item|
