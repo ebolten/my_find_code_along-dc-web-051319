@@ -6,8 +6,8 @@ def my_find(collection)
   vals = []
   while i < collection.length
     i += 1
-    if yield(collection[i]) == true
-      return yield(collection[i])
+    if yield(collection[i - 1]) == true
+      return yield(collection[i - 1])
       break
     end
   end
