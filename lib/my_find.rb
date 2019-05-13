@@ -6,7 +6,9 @@ def my_find(collection)
   vals = []
   while i < collection.length
     i += 1
-    yield(collection[i])
+    if yield(collection[i]) == true
+      return yield(collection[i])
+    end
   end
 
 
